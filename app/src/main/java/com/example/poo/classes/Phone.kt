@@ -1,12 +1,16 @@
 package com.example.poo.classes
 
-class Phone (val number: Int) {
+open class Phone (protected val number: Int) {
 
     fun call(){
         println("Calling....")
     }
 
-    fun shownumber(){
+    open fun shownumber(){
         println(number)
+    }
+
+    fun getnumber(): Int{
+        return number
     }
 }

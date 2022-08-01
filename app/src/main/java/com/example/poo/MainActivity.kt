@@ -16,6 +16,14 @@ class MainActivity : AppCompatActivity() {
     fun main(){
         phone.call()
         phone.shownumber()
-        println("The calling number is: " + phone.number)
+        println("The calling number is: " + phone.getnumber())
+
+        //instance of the class Smartphone
+        val smartphone = Smartphone(541203016, true)
+
+        smartphone.call()
+        smartphone.shownumber()
+
+
     }
 }
