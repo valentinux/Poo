@@ -2,7 +2,9 @@ package com.example.poo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.poo.classes.Group
 import com.example.poo.classes.Phone
+import com.example.poo.classes.User
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +25,11 @@ class MainActivity : AppCompatActivity() {
 
         smartphone.call()
         smartphone.shownumber()
+
+        val myUser = User( 1,"Alain", "Nicolás", Group.WORK.ordinal)
+
+        println(myUser.component2())
+        println(myUser)
 
 
     }
