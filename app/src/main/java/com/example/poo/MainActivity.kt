@@ -31,6 +31,25 @@ class MainActivity : AppCompatActivity() {
         println(myUser.component2())
         println(myUser)
 
+        val bro = User(2, "Manu", "Fernandez", group = Group.FAMILY.ordinal)
 
+        println(bro)
+
+        // función de alcance with:
+
+        with(smartphone){
+            call()
+            println(isPrivate)
+        }
+
+        // función de alcance apply:
+
+        bro.apply {
+            name = "Tomás"
+            lastname = "Gomez"
+            group = Group.FAMILY.ordinal
+        }
+
+        println(bro)
     }
 }
